@@ -1,0 +1,16 @@
+.inicio img{
+    width: 75%;
+    height: 100vh;
+    object-fit: cover;
+    
+}
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 64px;
+}

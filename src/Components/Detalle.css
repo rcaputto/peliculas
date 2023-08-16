@@ -1,0 +1,22 @@
+.detailTitle{
+    font-size: 32px;
+    color: dimgray;
+}
+
+.detail{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.overview{
+    width: 50%;
+}
+
+.web{
+    text-align: center;
+}
+.loading{
+    text-align: center;
+    font-size: 24px;
+}

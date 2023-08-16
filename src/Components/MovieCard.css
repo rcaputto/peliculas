@@ -1,0 +1,25 @@
+.card{
+    margin-bottom: 4rem;
+}
+
+.cardCopy h1{
+    color:dimgray;
+    font-size: 42px;
+}
+
+.cardImage img{
+    width: 400px;
+}
+
+.cardImage{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cardButtom{
+    align-self: center;
+    width: 15rem;
+    height: 8rem;
+    font-size: 28px;
+}
+

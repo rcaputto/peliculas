@@ -1,0 +1,39 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold ;
+    color: whitesmoke;
+    margin-top: 4rem;
+}
+
+.form p{
+    color: red;
+}
+
+.form label{
+    background-color:darkslategray;
+    width: 26%;
+    align-self: center;
+    height: 2rem;
+}
+
+.form input{
+    width: 25%;
+    height: 2rem;
+    align-self: center;
+    margin: 4px;
+}
+.button{
+    width: 25%;
+    align-self: center;
+    margin-top:18px ;
+    height: 4rem;
+    font-size: 32px;
+    
+}
+
+
+ 
