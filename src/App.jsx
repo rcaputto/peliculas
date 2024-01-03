@@ -9,6 +9,8 @@ import Register from "./assets/Pages/Register"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from "react"
 import AuthProvider from "./Context/AuthContex"
+import TvSeries from "./assets/Pages/TvSeries"
+import Index from "./assets/Pages"
 
 
 function App() {
@@ -22,8 +24,8 @@ function App() {
       <NavBar usuarioLogueado = {usuarioLogueado} />
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/home" element={<Home/>}/> 
-        
+        <Route path="/home" element={<Index/>}/> 
+        <Route path="/series" element={<TvSeries /> }/> 
         <Route path="/detail/:id" element={<Detalle/>}/>
         <Route path="/images/:id" element={<MovieImages/>}/>
         <Route path="/reparto/:id" element={<Reparto/> }/>

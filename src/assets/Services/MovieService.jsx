@@ -20,9 +20,9 @@ export  async function TvSeriesGetAll (){
     }
   };
   
-  return fetch('https://api.themoviedb.org/3/tv/popular?language=es-ES&page=1', options)
+  return fetch('https://api.themoviedb.org/3/tv/on_the_air?language=en-US&page=1', options)
     .then(response => response.json())
-    .then(response => console.log('TV',response))
+    
 }
 
 export async function GetById (id){

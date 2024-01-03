@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
-import  TvSeriesGetAll   from "../Services/MovieService";
-import MovieCard from "../../Components/MovieCard"
+import  {TvSeriesGetAll}   from "../Services/MovieService";
+import MovieCard from "../../Components/MovieCard";
+import {Card,Row }from 'react-bootstrap'
 
 
 export default function TvSeries(){
@@ -26,21 +27,23 @@ export default function TvSeries(){
 
     if(loading){
         return(
-            <h3 className="loading">Estamos buscando las películas</h3>
+            <h3 className="loading">Estamos buscando las series</h3>
         )
     }else{
 
         return(
-            <div>
-                <h1 className="title">Trending</h1>
-                {series?.map((pelicula) => (
+            <div >
+                <Card.Title style={{ textAlign:'center', margin:'12px', fontSize:'32px' }} >Listado de series</Card.Title>
+                <Row xs = {1} sm ={2} md ={3} lg={4} >
+                {series?.map((serie) => (
                     <MovieCard
-                    id={pelicula.id}
-                    title={pelicula.original_title}
-                    imagen=  {pelicula.poster_path}
+                    id={serie.id}
+                    title={serie.original_title}
+                    imagen=  {serie.poster_path}
                     
                     />
                 ))}
+                </Row>
             </div>
         )
     }

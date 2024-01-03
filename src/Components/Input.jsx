@@ -5,8 +5,6 @@ export default function Input({label, type='text', name, register, placeholder, 
         <Form.Group  
                 className='form'
                 controlId={name}
-                
-                
                 >
             <Form.Label>{label}</Form.Label>
             <Form.Control 
@@ -15,7 +13,6 @@ export default function Input({label, type='text', name, register, placeholder, 
                 {errors && errors[name]?.type === 'required' && 
                 <Form.Text style={{color:'red'}}>El campo es obligatorio</Form.Text>}
                 {children && children}
-                
-            </Form.Group>
+        </Form.Group>
     )
 }
