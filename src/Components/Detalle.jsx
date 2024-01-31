@@ -4,6 +4,7 @@ import { GetById } from '../assets/Services/MovieService';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
+import Col from 'react-bootstrap/Col'
 import Footer from './Footer'
 
 export default function Detalle() {
@@ -33,7 +34,9 @@ export default function Detalle() {
     } else {
         return (
             <>
-                <Card style={{ padding: '3rem' }}>
+            <Card style={{ padding: '3rem' }}>
+            <Col xs={12}   >
+                
                     <div style={{ display: 'flex' }}>
                         <Image src={`${path}${detail.poster_path}`} style={{ height: '75vh' }} />
                         <Card.Body style={{ padding: '4rem' }}>
@@ -47,6 +50,7 @@ export default function Detalle() {
                             <Button variant="primary" style={{ marginTop: '5rem', marginLeft: '4rem' }}><Link to={`/reparto/${id}`} style={{ textDecoration: 'none', color: 'white' }}>Reparto</Link></Button>
                         </Card.Body>
                     </div>
+                    </Col>
                 </Card>
                 <Footer/>
             </>

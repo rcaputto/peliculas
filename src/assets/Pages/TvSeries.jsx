@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import  {TvSeriesGetAll}   from "../Services/MovieService";
+import  {TvSeriesGetAll}   from "../Services/TvService";
 import MovieCard from "../../Components/MovieCard";
 import {Card,Row }from 'react-bootstrap'
 
